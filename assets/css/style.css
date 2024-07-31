@@ -1,0 +1,62 @@
+/* Google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap");
+
+/* Global styles */
+body {
+    font-family: 'Silkscreen', sans-serif;
+    /* background-image: url(../images/background.jpg);
+    background-size: cover; */
+    background: rgb(0, 0, 0);
+    color: white;
+    /* background-position: 100%; */
+    /* flex-grow: 1;
+    padding: 20px 10% 0 10%; */
+    text-align: center;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.logo {
+    height: 200px;
+    padding-right: 5px;
+}
+
+.control {
+    display: inline-block;
+    margin: 2px;
+    width: 80px;
+    height: 40px;
+}
+
+#message {
+    height: 20px;
+}
+
+.player {
+    background-color: rgb(255, 0, 0);
+    float: left;
+    width: 45%;
+    margin-left: 5%;
+}
+
+#player-image {
+    width: 75%;
+}
+
+.computer {
+    background-color: blueviolet ;
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+}
+
+#computer-image {
+    width: 75%;
+}
+
+#rules-section {
+    margin-top: 20px;
+}
