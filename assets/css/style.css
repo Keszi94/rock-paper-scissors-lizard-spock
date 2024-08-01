@@ -4,13 +4,8 @@
 /* Global styles */
 body {
     font-family: 'Silkscreen', sans-serif;
-    /* background-image: url(../images/background.jpg);
-    background-size: cover; */
-    background: rgb(0, 0, 0);
-    color: white;
-    /* background-position: 100%; */
-    /* flex-grow: 1;
-    padding: 20px 10% 0 10%; */
+    background: white;
+    color: black;
     text-align: center;
 }
 
@@ -36,27 +31,30 @@ body {
 }
 
 .player {
-    background-color: rgb(255, 0, 0);
+    background-color: lightblue;
     float: left;
-    width: 45%;
-    margin-left: 5%;
+    max-width: 90%;
+    margin-left: 10%;
+    
 }
 
 #player-image {
-    width: 75%;
+   width: 75%;
 }
 
 .computer {
-    background-color: blueviolet ;
+    background-color: lightpink ;
     float: right;
-    width: 45%;
-    margin-right: 5%;
+    max-width: 90%;
+    margin-right: 10%;
 }
 
 #computer-image {
     width: 75%;
 }
 
-#rules-section {
-    margin-top: 20px;
+.control {
+    font-family: 'Silkscreen', sans-serif;
+    text-align: center;
+    width: 150px;
 }
