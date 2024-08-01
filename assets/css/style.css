@@ -58,3 +58,15 @@ body {
     text-align: center;
     width: 150px;
 }
+
+.greenText {
+    color: green;
+}
+
+.redText {
+    color: red;
+}
+
+.orangeText {
+    color: orange;
+}
