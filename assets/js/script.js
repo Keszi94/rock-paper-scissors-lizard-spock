@@ -2,13 +2,15 @@
  * Declare constants for DOM elements
  */
 const buttons = document.getElementsByClassName("control");
+const rounds = document.getElementsByClassName("round");
 const playerScore = document.getElementById("player-score");
 const computerScore = document.getElementById("computer-score");
 const playerImage = document.getElementById("player-image");
 const computerImage = document.getElementById("computer-image");
+const playerHand = document.getElementById("player-hand");
+const computerHand = document.getElementById("computer-hand");
 const message = document.getElementById("message");
 const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
-const rounds = document.getElementsByClassName("round");
 
 let maxRounds = 0;
 let currentRound = 0;
@@ -34,6 +36,7 @@ for (let round of rounds) {
         currentRound = 0;
         resetGame();
         message.textContent = `You set the game to ${maxRounds} rounds. Make your first move!`
+        
         // Remove the colored letters classes from this text
         message.classList.remove("orangeText", "greenText", "redText");
     })
@@ -55,6 +58,9 @@ function runGame(playerChoice) {
     computerImage.alt = choices[computerChoice];
 
     let matchResult = checkWinner(choices[computerChoice], choices[playerChoice]);
+
+    // display the hands played in a round by calling the function 
+    getHandPlayed(choices[playerChoice], choices[computerChoice]);
 
     currentRound++;
     if (currentRound >= maxRounds) {
@@ -106,7 +112,7 @@ function declareWinner() {
         message.classList.add("greenText");
         // remove all other possible classes
         message.classList.remove("redText", "orangeText");
-        } else if (playerFinalScore < computerFinalScore) {
+    } else if (playerFinalScore < computerFinalScore) {
         message.textContent = "Awww! You lost! Better luck in the next game!"
         message.classList.add("redText");
         message.classList.remove("orangeText", "greenText");
@@ -123,7 +129,20 @@ function declareWinner() {
 function resetGame() {
     playerScore.textContent = "0";
     computerScore.textContent = "0";
-// include images to reload them as well 
+    
+    // include images to reload them as well 
     playerImage.src = "assets/images/rpsls.png";
     computerImage.src = "assets/images/rpsls.png";
+    
+    // reset the hand played text content
+    playerHand.textContent = "";
+    computerHand.textContent = "";
+
+}
+
+// Adding textContent to display which hand was played in the round
+function getHandPlayed(playerChoice, computerChoice) {
+
+    playerHand.textContent = playerChoice;
+    computerHand.textContent = computerChoice;
 }
