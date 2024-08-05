@@ -45,12 +45,17 @@ body {
     background-color: white;
 }
 
+#player-and-computer {
+    display: flex;
+}
+
 .player {
     background-color: white;
-    float: left;
     max-width: 50%;
-    margin-left: 10%;
+    margin-left: 1%;
     color: black;
+    float: left;
+    margin-right: 1%;
 
 }
 
@@ -60,10 +65,11 @@ body {
 
 .computer {
     background-color: white;
-    float: right;
     max-width: 50%;
-    margin-right: 10%;
+    margin-right: 1%;
     color: black;
+    float: right;
+    margin-left: 1%;
 }
 
 #computer-image {
@@ -78,39 +84,22 @@ body {
 }
 
 .greenText {
-    color: green;
+    color: rgb(31, 235, 31);
 }
 
 .redText {
-    color: red;
+    color: rgb(252, 19, 19);
 }
 
 .orangeText {
-    color: orange;
+    color: orange
 }
 
 /* Media query: large or landscape phones (576px and up) */
 @media screen and (min-width: 576px) {}
 
 /* Media query: tablets and larger (768px and up) */
-@media screen and (min-width: 768px) {
+ @media screen and (min-width: 768px) {
 
-    .player {
-        max-width: 45%;
-        margin-left: 2%;
-      }
-
-    #player-image {
-        width: 75%;
-    }
-
-    .computer {
-        max-width: 45%;
-        margin-right: 2%;
-    }
-
-    #computer-image {
-        width: 75%;
-    }
-
-}
+ 
+} 

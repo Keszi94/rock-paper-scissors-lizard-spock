@@ -62,6 +62,7 @@ function runGame(playerChoice) {
     // display the hands played in a round by calling the function 
     getHandPlayed(choices[playerChoice], choices[computerChoice]);
 
+    // Declares the winner of the game after a certain amount of rounds have been played
     currentRound++;
     if (currentRound >= maxRounds) {
         declareWinner();
@@ -101,7 +102,7 @@ function updateScores(matchResult) {
     }
 }
 
-// Declares the winner after the chosen amount of turns are finished
+// Declares the winner after the chosen amount of rounds are finished
 function declareWinner() {
     let playerFinalScore = parseInt(playerScore.textContent);
     let computerFinalScore = parseInt(computerScore.textContent);
