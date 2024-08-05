@@ -10,7 +10,7 @@ const computerImage = document.getElementById("computer-image");
 const playerHand = document.getElementById("player-hand");
 const computerHand = document.getElementById("computer-hand");
 const message = document.getElementById("message");
-const choices = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
+const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 
 let maxRounds = 0;
 let currentRound = 0;
@@ -79,11 +79,11 @@ function checkWinner(playerChoice, computerChoice) {
         message.textContent = "It's a tie!";
         return "tie";
     } else if (
-        (playerChoice === "Rock" && (computerChoice === "Scissors" || computerChoice === "Lizard")) ||
-        (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) ||
-        (playerChoice === "Scissors" && (computerChoice === "Paper" || computerChoice === "Lizard")) ||
-        (playerChoice === "Lizard" && (computerChoice === "Paper" || computerChoice === "Spock")) ||
-        (playerChoice === "Spock" && (computerChoice === "Rock" || computerChoice === "Scissors"))
+        (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
+        (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
+        (playerChoice === "scissors" && (computerChoice === "Paper" || computerChoice === "lizard")) ||
+        (playerChoice === "lizard" && (computerChoice === "paper" || computerChoice === "spock")) ||
+        (playerChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))
     ) {
         message.textContent = "You win this round!";
         return "player";
