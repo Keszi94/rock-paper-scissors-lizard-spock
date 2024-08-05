@@ -35,11 +35,11 @@ for (let round of rounds) {
         maxRounds = parseInt(this.getAttribute("data-choice"));
         currentRound = 0;
         resetGame();
-        message.textContent = `You set the game to ${maxRounds} rounds. Make your first move!`
+        message.textContent = `You set the game to ${maxRounds} rounds. Make your first move!`;
         
         // Remove the colored letters classes from this text
         message.classList.remove("orangeText", "greenText", "redText");
-    })
+    });
 }
 
 /**
@@ -75,7 +75,7 @@ function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice === computerChoice) {
         message.textContent = "It's a tie!";
-        return "tie"
+        return "tie";
     } else if (
         (playerChoice === "Rock" && (computerChoice === "Scissors" || "Lizard")) ||
         (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) ||
@@ -83,7 +83,7 @@ function checkWinner(playerChoice, computerChoice) {
         (playerChoice === "Lizard" && (computerChoice === "Paper" || computerChoice === "Spock")) ||
         (playerChoice === "Spock" && (computerChoice === "Rock" || computerChoice === "Scissors"))
     ) {
-        message.textContent = "You win this round!"
+        message.textContent = "You win this round!";
         return "player";
     } else {
         message.textContent = "The computer wins this round!";
@@ -107,17 +107,17 @@ function declareWinner() {
     let computerFinalScore = parseInt(computerScore.textContent);
 
     if (playerFinalScore > computerFinalScore) {
-        message.textContent = "Congrats! You are the winner! Start a new game!"
+        message.textContent = "Congrats! You are the winner! Start a new game!";
         // give the text color by adding a class to it from style.css
         message.classList.add("greenText");
         // remove all other possible classes
         message.classList.remove("redText", "orangeText");
     } else if (playerFinalScore < computerFinalScore) {
-        message.textContent = "Awww! You lost! Better luck in the next game!"
+        message.textContent = "Awww! You lost! Better luck in the next game!";
         message.classList.add("redText");
         message.classList.remove("orangeText", "greenText");
     } else {
-        message.textContent = "It's a tie! Start a new game!"
+        message.textContent = "It's a tie! Start a new game!";
         message.classList.add("orangeText");
         message.classList.remove("greenText", "redText");
     }
@@ -146,3 +146,4 @@ function getHandPlayed(playerChoice, computerChoice) {
     playerHand.textContent = playerChoice;
     computerHand.textContent = computerChoice;
 }
+
