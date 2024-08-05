@@ -58,7 +58,7 @@ function runGame(playerChoice) {
     computerImage.src = `assets/images/${choices[computerChoice]}.png`;
     computerImage.alt = choices[computerChoice];
 
-    let matchResult = checkWinner(choices[computerChoice], choices[playerChoice]);
+    let matchResult = checkWinner(choices[playerChoice], choices[computerChoice]);
 
     // display the hands played in a round by calling the function 
     getHandPlayed(choices[playerChoice], choices[computerChoice]);
