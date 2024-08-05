@@ -36,11 +36,12 @@ for (let round of rounds) {
         currentRound = 0;
         resetGame();
         message.textContent = `You set the game to ${maxRounds} rounds. Make your first move!`;
-        
+    
         // Remove the colored letters classes from this text
         message.classList.remove("orangeText", "greenText", "redText");
     });
 }
+
 
 /**
  * All functions
@@ -78,7 +79,7 @@ function checkWinner(playerChoice, computerChoice) {
         message.textContent = "It's a tie!";
         return "tie";
     } else if (
-        (playerChoice === "Rock" && (computerChoice === "Scissors" || "Lizard")) ||
+        (playerChoice === "Rock" && (computerChoice === "Scissors" || computerChoice === "Lizard")) ||
         (playerChoice === "Paper" && (computerChoice === "Rock" || computerChoice === "Spock")) ||
         (playerChoice === "Scissors" && (computerChoice === "Paper" || computerChoice === "Lizard")) ||
         (playerChoice === "Lizard" && (computerChoice === "Paper" || computerChoice === "Spock")) ||

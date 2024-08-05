@@ -51,7 +51,7 @@ body {
 
 .player {
     background-color: white;
-    max-width: 50%;
+    max-width: 48%;
     margin-left: 1%;
     color: black;
     float: left;
@@ -65,7 +65,7 @@ body {
 
 .computer {
     background-color: white;
-    max-width: 50%;
+    max-width: 48%;
     margin-right: 1%;
     color: black;
     float: right;
