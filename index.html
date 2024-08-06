@@ -20,65 +20,69 @@
 </head>
 
 <body>
-    <h1 class="heading">
-        Rock, Paper, Scissors, Lizard, Spock!
-    </h1>
+    <header>
+        <h1 class="heading">
+            Rock, Paper, Scissors, Lizard, Spock!
+        </h1>
+    </header>
     <img src="assets/images/hearts.png" alt="pixel hearts">
     <br>
-
-    <section class="rounds-number">
-        <div>
-            <h2>How many rounds would you like to play?</h2>
-            <button aria-label="three-rounds" data-choice="3" class="round">3 Rounds</button>
-            <button aria-label="five-rounds" data-choice="5" class="round">5 Rounds</button>
-            <button aria-label="seven-rounds" data-choice="7" class="round">7 Rounds</button>
-        </div>
-    </section>
-
-    <section class="game-area">
-        <div>
-            <p>Make a choice:</p>
-            <button aria-label="rock" data-choice="0" class="control">Rock</button>
-            <button aria-label="paper" data-choice="1" class="control">Paper</button>
-            <button aria-label="scissors" data-choice="2" class="control">Scissors</button>
-            <button aria-label="lizard" data-choice="3" class="control">Lizard</button>
-            <button aria-label="spock" data-choice="4" class="control">Spock</button>
-        </div>
-        <br>
-        <div id="message"></div>
-        <br>
-        <div id="player-and-computer">
-            <div class="player">
-                <h3 class="scores">Your score: <span id="player-score">0</span></h3>
-                <h3 class="move-name">You played: <span id="player-hand"></span></h3>
-                <img id="player-image" src="assets/images/rpsls.png" alt="Rock Paper Scissors Lizard Spock">
+    <main>
+        <section class="rounds-number">
+            <div>
+                <h2>How many rounds would you like to play?</h2>
+                <button aria-label="three-rounds" data-choice="3" class="round">3 Rounds</button>
+                <button aria-label="five-rounds" data-choice="5" class="round">5 Rounds</button>
+                <button aria-label="seven-rounds" data-choice="7" class="round">7 Rounds</button>
             </div>
-            <div class="computer">
-                <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
-                <h3 class="move-name">Computer played: <span id="computer-hand"></span></h3>
-                <img id="computer-image" src="assets/images/rpsls.png" alt="Rock Paper Scissors Lizard Spock">
+        </section>
+
+        <section class="game-area">
+            <div>
+                <p>Make a choice:</p>
+                <button aria-label="rock" data-choice="0" class="control">Rock</button>
+                <button aria-label="paper" data-choice="1" class="control">Paper</button>
+                <button aria-label="scissors" data-choice="2" class="control">Scissors</button>
+                <button aria-label="lizard" data-choice="3" class="control">Lizard</button>
+                <button aria-label="spock" data-choice="4" class="control">Spock</button>
             </div>
-        </div>
-    </section>
+            <br>
+            <div id="message"></div>
+            <br>
+            <div id="player-and-computer">
+                <div class="player">
+                    <h3 class="scores">Your score: <span id="player-score">0</span></h3>
+                    <h3 class="move-name">You played: <span id="player-hand"></span></h3>
+                    <img id="player-image" src="assets/images/rpsls.png" alt="Rock Paper Scissors Lizard Spock">
+                </div>
+                <div class="computer">
+                    <h3 class="scores">Computer score: <span id="computer-score">0</span></h3>
+                    <h3 class="move-name">Computer played: <span id="computer-hand"></span></h3>
+                    <img id="computer-image" src="assets/images/rpsls.png" alt="Rock Paper Scissors Lizard Spock">
+                </div>
+            </div>
+        </section>
+    </main>
     <br>
     <img src="assets/images/half-heart.png" alt="pixel hearts">
-    <section>
-        <div id="rules-section">
-            <h2>Rules:</h2>
+    <footer>
+        <section>
+            <div id="rules-section">
+                <h2>Rules:</h2>
 
-            <p class="rules">Scissors cuts Paper</p>
-            <p class="rules">Paper covers Rock</p>
-            <p class="rules">Rock crushes Lizard</p>
-            <p class="rules">Lizard poisons Spock</p>
-            <p class="rules">Spock smashes Scissors</p>
-            <p class="rules">Scissors decapitates Lizard</p>
-            <p class="rules">Lizard eats Paper</p>
-            <p class="rules">Paper disproves Spock</p>
-            <p class="rules">Spock vaporizes Rock</p>
-            <p class="rules">Rock crushes Scissors</p>
-        </div>
-    </section>
-
+                <p>Scissors cuts Paper</p>
+                <p>Paper covers Rock</p>
+                <p>Rock crushes Lizard</p>
+                <p>Lizard poisons Spock</p>
+                <p>Spock smashes Scissors</p>
+                <p>Scissors decapitates Lizard</p>
+                <p>Lizard eats Paper</p>
+                <p>Paper disproves Spock</p>
+                <p>Spock vaporizes Rock</p>
+                <p>Rock crushes Scissors</p>
+            </div>
+        </section>
+    </footer>
     <script src="assets/js/script.js"></script>
 </body>
 
