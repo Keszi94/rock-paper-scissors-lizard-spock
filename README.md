@@ -134,8 +134,6 @@ Github - To save and store the files for the website.
 
 Google Fonts - To import the fonts used on the website.
 
-Google Dev Tools - To troubleshoot and test features, solve issues with responsiveness and styling.
-
 [ImageResizer.com](https://imageresizer.com/resize/download/66b0eeb175dd25c968ff86c6) To resize images.
 
 [Am I Responsive?](http://ami.responsivedesign.is/) To show the website image on a range of devices.
@@ -163,7 +161,7 @@ Github Pages was used to deploy the live website. The instructions to achieve th
 
 #### How to Fork
 
-To fork the gamer_corner repository:
+To fork the rock-paper-scissors-lizard-spock repository:
 
 1. Log in (or sign up) to Github.
 2. Go to the repository for this project, [Keszi94/rock-paper-scissors-lizard-spock](https://github.com/Keszi94/rock-paper-scissors-lizard-spock).
@@ -174,7 +172,7 @@ To fork the gamer_corner repository:
 To clone the rock-paper-scissors-lizard-spock repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, Keszi94/rock-paper-scissors-lizard-spock.
+2. Go to the repository for this project, [Keszi94/rock-paper-scissors-lizard-spock](https://github.com/Keszi94/rock-paper-scissors-lizard-spock).
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
@@ -223,7 +221,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Solved Bugs
 
-1. 
+1. During manual testing I have noticed that when playing a 3 round game the message displaying the winner would print the 'tie' message even if the scores were 2 to 1. This was caused by calling declareWinner before updateScores in the runGame function. I have fixed the issue by swapping them. 
 
 2. 
 

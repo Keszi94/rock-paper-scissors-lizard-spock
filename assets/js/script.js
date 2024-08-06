@@ -36,7 +36,7 @@ for (let round of rounds) {
         currentRound = 0;
         resetGame();
         message.textContent = `You set the game to ${maxRounds} rounds. Make your first move!`;
-    
+
         // Remove the colored letters classes from this text
         message.classList.remove("orangeText", "greenText", "redText");
     });
@@ -63,13 +63,14 @@ function runGame(playerChoice) {
     // display the hands played in a round by calling the function 
     getHandPlayed(choices[playerChoice], choices[computerChoice]);
 
-    // Declares the winner of the game after a certain amount of rounds have been played
-    currentRound++;
-    if (currentRound >= maxRounds) {
-        declareWinner();
-    }
-
     updateScores(matchResult);
+
+     // Declares the winner of the game after a certain amount of rounds have been played
+     currentRound++;
+     if (currentRound >= maxRounds) {
+         declareWinner();
+     }
+ 
 }
 
 // Checks who the winner is
@@ -124,18 +125,17 @@ function declareWinner() {
         message.classList.remove("greenText", "redText");
     }
     maxRounds = 0;
-
 }
 
 // Resets the game after choosing a new round 
 function resetGame() {
     playerScore.textContent = "0";
     computerScore.textContent = "0";
-    
+
     // include images to reload them as well 
     playerImage.src = "assets/images/rpsls.png";
     computerImage.src = "assets/images/rpsls.png";
-    
+
     // reset the hand played text content
     playerHand.textContent = "";
     computerHand.textContent = "";
