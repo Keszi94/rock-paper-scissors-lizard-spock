@@ -15,6 +15,9 @@ const choices = ["rock", "paper", "scissors", "lizard", "spock"];
 let maxRounds = 0;
 let currentRound = 0;
 
+// Tracks the currently active button in the round buttons
+let activeRoundButton = null;
+
 /**
  * Event listeners
  */
@@ -39,6 +42,16 @@ for (let round of rounds) {
 
         // Remove the colored letters classes from this text
         message.classList.remove("orangeText", "greenText", "redText");
+
+        // Removes the active class from the previously active button
+        if (activeRoundButton) {
+            activeRoundButton.classList.remove("active");
+        }
+        // Adds the 'active' state to the newly pressed button 
+        this.classList.add("active");
+        // Updates the button thats been just clicked
+        activeRoundButton = this;
+
     });
 }
 
@@ -65,12 +78,12 @@ function runGame(playerChoice) {
 
     updateScores(matchResult);
 
-     // Declares the winner of the game after a certain amount of rounds have been played
-     currentRound++;
-     if (currentRound >= maxRounds) {
-         declareWinner();
-     }
- 
+    // Declares the winner of the game after a certain amount of rounds have been played
+    currentRound++;
+    if (currentRound >= maxRounds) {
+        declareWinner();
+    }
+
 }
 
 // Checks who the winner is

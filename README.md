@@ -88,8 +88,9 @@ The website is one page which is comprised of:
 * A header with simple text stating the name of the website/game with a simple image underneath to break up the page.
 ![Header](assets/images/readme-images/header.png)
 
-* at the top of the main area there are three buttons that gives the player the choice of how many rounds they would like to play.
+* at the top of the main area there are three buttons that gives the player the choice of how many rounds they would like to play. The buttons change color when clicked and then go back to their default style when an other button is clicked.
 ![Rounds buttons](assets/images/readme-images/rounds-buttons.png)
+![Round buttons when clicked](assets/images/readme-images/round-buttons-clicked.png)
 
 * In the main game area there are five buttons with the possible choices of hands to play.
 ![Hands to play](assets/images/readme-images/hand-buttons.png)
@@ -143,7 +144,7 @@ Google Fonts - To import the fonts used on the website.
 Github Pages was used to deploy the live website. The instructions to achieve this are below:
 
 1. Log in (or sign up) to Github.
-2. Find the repository for this project, rock-paper-scissors-lizard-spock.
+2. Find the repository for this project, [Keszi94/rock-paper-scissors-lizard-spock](https://github.com/Keszi94/rock-paper-scissors-lizard-spock).
 3. Click on the Settings link.
 4. Click on the Pages link in the left hand side navigation bar.
 5. In the Source section, choose main from the drop down select branch menu. Select Root from the drop down select folder menu.
@@ -202,7 +203,7 @@ Below are the details of my testing process:
 1. Samsung Galaxy S21 FE
   * The game runs without any complications with responsive touch control and no visual or performance issues.
 
-2. OnePlus One 
+2. OnePlus Nord 
   * Same as on the other device, the game performs well, the gameplay is responsive.
 
 #### Browsers tested on Desktop

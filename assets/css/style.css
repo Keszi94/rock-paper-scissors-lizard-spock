@@ -83,6 +83,7 @@ body {
     background-color: white;
 }
 
+/* Changing the message text color depending on outcome */
 .greenText {
     color: rgb(31, 235, 31);
 }
@@ -94,6 +95,12 @@ body {
 .orangeText {
     color: orange
 }
+
+/* Changing the color of the round buttons when clicked - active state */
+.round.active {
+    background-color: rgb(253, 139, 139);
+}
+
 
 /* Media query: tablets and larger (768px and up) */
  @media screen and (min-width: 768px) {
