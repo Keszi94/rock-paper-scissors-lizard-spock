@@ -92,7 +92,7 @@ function checkWinner(playerChoice, computerChoice) {
     } else if (
         (playerChoice === "rock" && (computerChoice === "scissors" || computerChoice === "lizard")) ||
         (playerChoice === "paper" && (computerChoice === "rock" || computerChoice === "spock")) ||
-        (playerChoice === "scissors" && (computerChoice === "Paper" || computerChoice === "lizard")) ||
+        (playerChoice === "scissors" && (computerChoice === "paper" || computerChoice === "lizard")) ||
         (playerChoice === "lizard" && (computerChoice === "paper" || computerChoice === "spock")) ||
         (playerChoice === "spock" && (computerChoice === "rock" || computerChoice === "scissors"))
     ) {

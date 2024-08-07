@@ -100,6 +100,19 @@ body {
     background-color: rgb(253, 139, 139);
 }
 
+/* 404 ERROR PAGE */
+#error-img {
+    display: flex;
+    justify-content: center;
+    max-width: 50%;
+}
+
+#error-button {
+    text-align: center;
+    background-color: white;
+    font-family: 'Silkscreen', sans-serif;
+}
+
 /* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
 
