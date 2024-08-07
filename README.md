@@ -185,10 +185,18 @@ Testing was ongoing throughout the entire build. I utilised Chrome developer too
 
 The W3C validator was used to validate the HTML on the website. It was also used to validate CSS in the style.css file.
 
+#### Index page
+
 * [Index.html HTML](assets/images/readme-images/markup-validation-html.png)
 * [style.css CSS](assets/images/readme-images/validation-css.png)
 
+#### 404 Error Page
+
+* [error page validation](assets/images/readme-images/error-pg-markup-valid.png)
+
 ### WAVE Testing
+
+#### Index page
 
 During testing Wave gave me the following alert: "No page regions"
 
@@ -198,6 +206,12 @@ During testing Wave gave me the following alert: "No page regions"
 I have fixed the issue by including a Header, a body and a footer element in my HTML code. After including those in my code the test returned no further alerts.
 
 ![WAVE test final](assets/images/readme-images/wave-complete.png)
+
+#### 404 Error Page 
+
+No alerts were given when testing 404.html.
+
+![Wave test error page](assets/images/readme-images/error-pg-wave.png)
 
 ### Manual Testing
 
@@ -223,6 +237,39 @@ Below are the details of my testing process:
 
 3. Mozilla Firefox
   * The game loads without any issues, the gameplay is responsive, no bugs present. There is a slight difference in how the message displays on the page - the message 'touches' the top of the player boxes unlike in the other browsers where there is space around the message display.
+
+#### Full manual testing
+
+* Index Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| 3 Rounds button | Should set the game to be played only for 3 rounds, the button's background should turn red when clicked | Clicked on button | Game is set to 3 rounds max, button's background turned red | Pass |
+| 5 Rounds button | Should set the game to be played only for 5 rounds, the button's background should turn red when clicked | Clicked on button | Game is set to 5 rounds max, button's background turned red | Pass |
+| 7 Rounds button | Should set the game to be played only for 7 rounds, the button's background should turn red when clicked | Clicked on button | Game is set to 7 rounds max, button's background turned red | Pass |
+| 'Rock' button | Should set the player's choice to be 'Rock', 'computer' should display a random choice | Clicked on button | Player's choice is set to 'Rock' and computer displays random hand | Pass |
+| 'Paper' button | Should set the player's choice to be 'Paper', 'computer' should display a random choice | Clicked on button | Player's choice is set to 'Paper' and computer displays random hand  | Pass |
+| 'Scissors' button | Should set the player's choice to be 'Scissors', 'computer' should display a random choice | Clicked on button | Player's choice is set to 'Scissors' and computer displays random hand  | Pass |
+| 'Lizard' button | Should set the player's choice to be 'Lizard', 'computer' should display a random choice | Clicked on button | Player's is set to 'Lizard' and computer displays random hand | Pass |
+| 'Spock' button | Should set the player's choice to be 'Spock', 'computer' should display a random choice | Clicked on button | Player's choice is set to 'Spock' and computer displays random hand | Pass |
+| Message area - after any 'rounds' button is pressed | message should display: "You set the game to 3/5/7 rounds. Make your first move!" in white text color | clicked on 3/5/7 rounds button | The correct message displays each time in white | Pass |
+| Message area - after each round played | The message should display who won/lost the current round or if it was a tie in white text color | pressed either button to choose player hand | The correct message displays each time in white | Pass |
+| Message area - when the player wins the game | The message "Congrats! You are the winner! Start a new game!" should display with green text color | the player wins the game | Intended messages displays in green | Pass |
+| Message area - when the player loses the game | The message "Awww! You lost! Better luck in the next game!" should display with red text color | the player loses the game | Intended messages displays in red | Pass |
+| Message area - when the game is a tie the game | The message "It's a tie! Start a new game!" should display with orange text color | the game end in a tie | Intended messages displays in orange | Pass |
+| Score counter - player | The score counter should begin at 0. Each time player wins the score should increase by 1. If player loses the round the score should remain the same | played game until player won and lost | When player won the score increased by 1, when player lost the score stayed the same | Pass |
+| Score counter - computer | The score counter should begin at 0. Each time computer wins the score should increase by 1. If computer loses the round the score should remain the same | played game until computer won and lost | When computer won the score increased by 1, when computer lost the score stayed the same | Pass |
+| You played - choice text displayed for player | After the player makes their choice it should print the hand chosen by the player | clicked on all choice buttons | player choice printed each of my choices correctly ex. clicked: 'Rock' => player choice: Rock | Pass |
+| Computer played - choice text displayed for computer | After the player makes their choice it should print the hand chosen by computer | clicked on all choice buttons | computer choice printed choices correctly - I have used console log to check | Pass |
+| Player and computer hand image - default | A specific image should display when the page is first loaded and when the game is reset | Restarted the game by clicking a rounds button | The default image displayed | Pass |
+| Player hand image | An image of the hand chosen should display in the player area after the choice button is clicked | Clicked all of the choice buttons | After clicking all the available choices the correct images showed in the player area each time | Pass |
+| Computer hand image | An image of the random hand chosen should display in the computer area after the choice button is clicked by the player | Clicked all of the choice buttons | After clicking all the available choices the correct images showed in the computer area each time - I have used console log to check | Pass |
+
+* 404 Error Page
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| Home button | Should take the visitor back to the Index page | Clicked on Home button | I got redirected to the index page. | Pass |
 
 ### Lighthouse Testing
 
