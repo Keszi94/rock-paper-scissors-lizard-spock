@@ -4,7 +4,7 @@ Welcome to the Rock, Paper, Scissors, Lizard, Spock (RPSLS) game! This web-based
 
 How to play:
 
-1. Choose how many rounds you would like to play. Yout options are: 
+1. Choose how many rounds you would like to play. Your options are: 
   * 3 rounds
   * 5 rounds
   * 7 rounds
@@ -188,12 +188,33 @@ During testing Wave gave me the following alert: "No page regions"
 ![WAVE alert 1](assets/images/readme-images/wave-alert-first.png)
 ![WAVE alert 2](assets/images/readme-images/wave-alert-second.png)
 
-I have fixed the issue by including a Header, a body and a footer element in my HTML code. 
+I have fixed the issue by including a Header, a body and a footer element in my HTML code. After including those in my code the test returned no further alerts.
 ![WAVE test final](assets/images/readme-images/wave-complete.png)
 
 ### Manual Testing
 
+To ensure a smooth and reliable user experience I have tested the RPSLS website on various devices and browsers. My testing covered various possible scenarios to ensure compability and good performance across different platforms.
 
+Below are the details of my testing process:
+
+#### Devices tested
+
+1. Samsung Galaxy S21 FE
+  * The game runs without any complications with responsive touch control and no visual or performance issues.
+
+2. OnePlus One 
+  * Same as on the other device, the game performs well, the gameplay is responsive.
+
+#### Browsers tested on Desktop
+
+1. Google Chrome
+  * The game loads quickly with all interactions functioning as expected. No issues found at final testing.
+
+2. Opera
+  * The game operates seamlessly, the performance is consistent and the features are fully functional. No issues detected.
+
+3. Mozilla Firefox
+  * The game loads without any issues, the gameplay is responsive, no bugs present. There is a slight difference in how the message displays on the page - the message 'touches' the top of the player boxes unlike in the other browsers where there is space around the message display.
 
 ### Lighthouse Testing
 
@@ -239,7 +260,6 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 * I was inspired by [this Youtube tutorial](https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=9s) - to make the winner messages display with a different color depending on the game's outcome.
 * Used the exaamples on [this](https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/) - website to help me create a basic structure for some of my functions.
-<!-- * [Stackoverflow](https://stackoverflow.com/) - Found some relevant questions to some of my bugs and was able to fix them with the answers provided. -->
 
 I have used the following websites to gather relevant information during my research:
 * [Stackoverflow](https://stackoverflow.com/)
@@ -250,7 +270,7 @@ I have used the following websites to gather relevant information during my rese
 ### Content
 
 * I took the complete list of rules from the [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) website.
-* I created my Readme file based on [Kera Cudmore's](https://github.com/kera-cudmore) [Bully Book Club](https://github.com/kera-cudmore/Bully-Book-Club) Readme file.
+* I created my Readme file based on [Kera Cudmore's](https://github.com/kera-cudmore) [Bully Book Club](https://github.com/kera-cudmore/Bully-Book-Club) and [TheQuizArms](https://github.com/kera-cudmore/TheQuizArms) Readme file.
 
 ### Media
 
