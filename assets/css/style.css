@@ -102,15 +102,16 @@ body {
 
 /* 404 ERROR PAGE */
 #error-img {
-    display: flex;
-    justify-content: center;
     max-width: 50%;
+    margin-top: 5%;
 }
 
 #error-button {
     text-align: center;
     background-color: white;
     font-family: 'Silkscreen', sans-serif;
+    width: 100px;
+    height: 40px;
 }
 
 /* Media query: tablets and larger (768px and up) */
