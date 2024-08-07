@@ -1,5 +1,20 @@
-# Rock, Paper, Scissors, Lizard, Spock (RSPLS) Website
+# Rock, Paper, Scissors, Lizard, Spock (RPSLS) Website
 
+Welcome to the Rock, Paper, Scissors, Lizard, Spock (RPSLS) game! This web-based game is a twist on the classic "Rock, Paper, Scissors" game adding two more choices - Lizard and Spock - based on the famous TV show, The Big Bang Theory.
+
+How to play:
+
+1. Choose how many rounds you would like to play. Yout options are: 
+  * 3 rounds
+  * 5 rounds
+  * 7 rounds
+2. Choose your move: Rock, Paper, Scissors, Lizard or Spock.
+3. The computer will make a choice the same time as you.
+4. After the end of the game the winner will be displayed based on the rules provided at the bottom of the page.
+
+I hope you will enjoy playing RPSLS as much as I enjoyed creating it!
+
+Happy gaming!
 
 ![RPSLS Website on different devices](assets/images/readme-images/rpsls-amiresponsive.png)
 
@@ -8,9 +23,6 @@
 - - -
 
 ## CONTENTS
- 
-* [User Experience](#user-experience-ux)
-   * [User Stories](#user-stories)
  
  * [Design](#design)
    * [Colour Scheme](#colour-scheme)
@@ -40,28 +52,6 @@
    * [Acknowledgments](#acknowledgments)
 
 ---
-
-## User Experience (UX)
-
-## User Stories
-
-#### First Time Visitor Goals
-
-* 
-* 
-* 
-
-#### Returning Visitor Goals
-
-* 
-* 
-
-
-#### Frequent Visitor Goals
-
-* 
-
-- - - 
 
 ## Design 
 
@@ -226,6 +216,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ### Solved Bugs
 
 1. During manual testing I have noticed that when playing a 3 round game the message displaying the winner would print the 'tie' message even if the scores were 2 to 1. This was caused by calling declareWinner before updateScores in the runGame function. I have fixed the issue by swapping them. 
+
 ![Tie bug](assets/images/readme-images/tie-bug.png)
 
 2. After creating the function that changed the meassage's text color depending on the games outcome the text color would stay the same after resetting the game. I have fixed this by removing the css classes from the message in the round button's event listener.
@@ -237,6 +228,7 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 5. After calling the resetGame function the images displayed inside the game area would not go back to the original image. I have fixed this by calling the images from inside the function, therefore whenever the function executes now it calls on the images by using the source provided inside the function.
 
 6.  After adding the option to choose how many rounds the player would like to play the game logic started working backwards, declaring that rock beat paper and paper beat rock, etc. My mentor, Graeme Taylor pointed it out to me  that inside the runGame function and in the getHandPlayed function call the arguments were written in the wrong order. Switching them solved the issue.
+
 ![Winner bug](assets/images/readme-images/winner-bug.png)
 
 - - - 
