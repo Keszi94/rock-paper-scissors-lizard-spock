@@ -10,7 +10,6 @@
 ## CONTENTS
  
 * [User Experience](#user-experience-ux)
-   * [Initial Discussion](#initial-discussion)
    * [User Stories](#user-stories)
  
  * [Design](#design)
@@ -44,23 +43,7 @@
 
 ## User Experience (UX)
 
-### Initial Discussion
-
-
-
-### Key information for the site
-
-* 
-* 
-* 
-* 
-
 ## User Stories
-
-#### Client Goals
-
-* 
-* 
 
 #### First Time Visitor Goals
 
@@ -86,7 +69,9 @@
 
 ![RPSLS Website Color Palette](assets/images/readme-images/rpsls-palette.png)
 
-The website uses only two colors, black and white. The look of the website was inspired by 8bit games such as UnderTale. The colour palette was created using the [Coolors](https://coolors.co/) website.
+The website uses only two colors, black and white. The look of the website was inspired by 8bit games such as Underale and Deltarune. I have added a splash of color by using two small png images with red hearts in the body of the webpage.
+
+The colour palette was created using the [Coolors](https://coolors.co/) website.
 
 ### Typography 
 
@@ -108,6 +93,23 @@ A wireframe was created for mobile, tablet and desktop.
 
 ### Features
 
+The website is one page which is comprised of:
+
+* A header with simple text stating the name of the website/game with a simple image underneath to break up the page.
+![Header](assets/images/readme-images/header.png)
+
+* at the top of the main area there are three buttons that gives the player the choice of how many rounds they would like to play.
+![Rounds buttons](assets/images/readme-images/rounds-buttons.png)
+
+* In the main game area there are five buttons with the possible choices of hands to play.
+![Hands to play](assets/images/readme-images/hand-buttons.png)
+
+* Also in the game area there is the message displaying the winner of each round and also the final winner of the game, two seperate sections for the player and the computer which have a score and a hand played display as well as images that change depending on the choices made.
+![Game area message](assets/images/readme-images/game-area-w-message.png)
+![Game area images](assets/images/readme-images/game-area-start.png)
+
+* In the footer element you can find the rules section.
+![Rules section](assets/images/readme-images/rules-footeer.png)
 
 ### Accessibility
 
@@ -116,7 +118,7 @@ I have been mindful during coding to ensure that the website is as accessible fr
 * Using semantic HTML.
 * Using descriptive alt attributes on images on the site.
 * Ensuring that there is a sufficient colour contrast throughout the site.
-* 
+* Choosing a sans serif font for the site - these fonts are suitable for people with dyslexia.
 
 - - - 
 
@@ -201,6 +203,8 @@ I have fixed the issue by including a Header, a body and a footer element in my 
 
 ### Manual Testing
 
+
+
 ### Lighthouse Testing
 
 I used Lighthouse within the Chrome Developer Tools to test the performance, accessibility, best practices and SEO of the website.
@@ -222,25 +226,18 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 ### Solved Bugs
 
 1. During manual testing I have noticed that when playing a 3 round game the message displaying the winner would print the 'tie' message even if the scores were 2 to 1. This was caused by calling declareWinner before updateScores in the runGame function. I have fixed the issue by swapping them. 
+![Tie bug](assets/images/readme-images/tie-bug.png)
 
-2. 
+2. After creating the function that changed the meassage's text color depending on the games outcome the text color would stay the same after resetting the game. I have fixed this by removing the css classes from the message in the round button's event listener.
 
-3. 
+3. When adding the function getHandPlayed to display which button the player and the computer chose for the current round, the playerHand would not display. It was caused by a typo in declaring the constant for playerHand. I corrected it and the function worked without any issues after.
 
-4.  
+4.  During manual testing I have noticed that the checkWinner function did not work. This was due to the incorrect use of the 'or' (||) operator. After searching on google for a solution I was able to find a relevant question on the [stackoverflow](https://stackoverflow.com/) forum, which helped me with the correct usage of the operator.
 
-5. 
+5. After calling the resetGame function the images displayed inside the game area would not go back to the original image. I have fixed this by calling the images from inside the function, therefore whenever the function executes now it calls on the images by using the source provided inside the function.
 
-6.   
-
-7. 
-
-
-### Known Bugs
-
-1. 
-
-2. 
+6.  After adding the option to choose how many rounds the player would like to play the game logic started working backwards, declaring that rock beat paper and paper beat rock, etc. My mentor, Graeme Taylor pointed it out to me  that inside the runGame function and in the getHandPlayed function call the arguments were written in the wrong order. Switching them solved the issue.
+![Winner bug](assets/images/readme-images/winner-bug.png)
 
 - - - 
 
@@ -248,9 +245,15 @@ I used Lighthouse within the Chrome Developer Tools to test the performance, acc
 
 ### Code Used
 
-* I was inspired by [this Youtube tutorial](https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=9s) to make the winner messages display with a different color depending on the game's outcome.
-* Used the exaamples on [this](https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/) website to help me create a basic structure for some of my functions.
-* [CSS Tutorial](https://www.w3schools.com/css/default.asp) Used this website to help me check if I was using the correct values for some properties in my css code. 
+* I was inspired by [this Youtube tutorial](https://www.youtube.com/watch?v=3uKdQx-SZ5A&t=9s) - to make the winner messages display with a different color depending on the game's outcome.
+* Used the exaamples on [this](https://www.codewizardshq.com/javascript-tutorial-for-kids-rock-paper-scissors/) - website to help me create a basic structure for some of my functions.
+<!-- * [Stackoverflow](https://stackoverflow.com/) - Found some relevant questions to some of my bugs and was able to fix them with the answers provided. -->
+
+I have used the following websites to gather relevant information during my research:
+* [Stackoverflow](https://stackoverflow.com/)
+* [Reddit](https://www.reddit.com/)
+* [Thecodingforums](https://www.thecodingforums.com/)
+* [W3Schools](https://www.w3schools.com/)
 
 ### Content
 
