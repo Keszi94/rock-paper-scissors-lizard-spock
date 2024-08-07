@@ -51,10 +51,8 @@ for (let round of rounds) {
         this.classList.add("active");
         // Updates the button thats been just clicked
         activeRoundButton = this;
-
     });
 }
-
 
 /**
  * All functions
@@ -83,7 +81,6 @@ function runGame(playerChoice) {
     if (currentRound >= maxRounds) {
         declareWinner();
     }
-
 }
 
 // Checks who the winner is
@@ -152,7 +149,6 @@ function resetGame() {
     // reset the hand played text content
     playerHand.textContent = "";
     computerHand.textContent = "";
-
 }
 
 // Adding textContent to display which hand was played in the round

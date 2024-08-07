@@ -86,20 +86,25 @@ A wireframe was created for mobile, tablet and desktop.
 The website is one page which is comprised of:
 
 * A header with simple text stating the name of the website/game with a simple image underneath to break up the page.
+
 ![Header](assets/images/readme-images/header.png)
 
 * at the top of the main area there are three buttons that gives the player the choice of how many rounds they would like to play. The buttons change color when clicked and then go back to their default style when an other button is clicked.
+
 ![Rounds buttons](assets/images/readme-images/rounds-buttons.png)
 ![Round buttons when clicked](assets/images/readme-images/round-buttons-clicked.png)
 
 * In the main game area there are five buttons with the possible choices of hands to play.
+
 ![Hands to play](assets/images/readme-images/hand-buttons.png)
 
 * Also in the game area there is the message displaying the winner of each round and also the final winner of the game, two seperate sections for the player and the computer which have a score and a hand played display as well as images that change depending on the choices made.
+
 ![Game area message](assets/images/readme-images/game-area-w-message.png)
 ![Game area images](assets/images/readme-images/game-area-start.png)
 
 * In the footer element you can find the rules section.
+
 ![Rules section](assets/images/readme-images/rules-footeer.png)
 
 ### Accessibility
@@ -186,10 +191,12 @@ The W3C validator was used to validate the HTML on the website. It was also used
 ### WAVE Testing
 
 During testing Wave gave me the following alert: "No page regions"
+
 ![WAVE alert 1](assets/images/readme-images/wave-alert-first.png)
 ![WAVE alert 2](assets/images/readme-images/wave-alert-second.png)
 
 I have fixed the issue by including a Header, a body and a footer element in my HTML code. After including those in my code the test returned no further alerts.
+
 ![WAVE test final](assets/images/readme-images/wave-complete.png)
 
 ### Manual Testing

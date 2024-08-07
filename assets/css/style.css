@@ -56,7 +56,6 @@ body {
     color: black;
     float: left;
     margin-right: 1%;
-
 }
 
 #player-image {
@@ -101,13 +100,12 @@ body {
     background-color: rgb(253, 139, 139);
 }
 
-
 /* Media query: tablets and larger (768px and up) */
- @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
     #player-and-computer {
         display: flex;
         justify-content: center;
     }
 
-} 
+}
