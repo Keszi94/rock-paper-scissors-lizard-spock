@@ -62,7 +62,7 @@ Happy gaming!
 
 ### User Stories
 
-#### First Time Visitor Goals
+#### Visitor Goals
 
 * I want to understand what are the rules of the game so I can play without confusion.
 * I want to be able to select the number of rounds I want to play to customize my game experience.
