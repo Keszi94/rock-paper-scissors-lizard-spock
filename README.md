@@ -11,6 +11,7 @@ How to play:
 2. Choose your move: Rock, Paper, Scissors, Lizard or Spock.
 3. The computer will make a choice the same time as you.
 4. After the end of the game the winner will be displayed based on the rules provided at the bottom of the page.
+5. To start a new game simply choose how many rounds you would like to play again.
 
 I hope you will enjoy playing RPSLS as much as I enjoyed creating it!
 
@@ -24,12 +25,14 @@ Happy gaming!
 
 ## CONTENTS
  
+* [User Experience](#user-experience-ux)
+   * [User Stories](#user-stories)
+
  * [Design](#design)
    * [Colour Scheme](#colour-scheme)
    * [Typography](#typography)
    * [Imagery](#imagery)
    * [Wireframes](#wireframes)
-
    * [Features](#features)
    * [Accessibility](#accessibility)
 
@@ -52,6 +55,22 @@ Happy gaming!
    * [Acknowledgments](#acknowledgments)
 
 ---
+
+![Website header](assets/images/readme-images/header.png)
+
+## User Experience (UX)
+
+### User Stories
+
+#### First Time Visitor Goals
+
+* I want to understand what are the rules of the game so I can play without confusion.
+* I want to be able to select the number of rounds I want to play to customize my game experience.
+* I would like to see visual feedback on my actions so that I know my inputs registered.
+* I want to know my current score and the result of each round, to keep track of the match.
+* I want the site to reset the game if I choose, so that I can play again.
+
+- - - 
 
 ## Design 
 
@@ -331,7 +350,7 @@ I have used the following websites to gather relevant information during my rese
 
 #### Images
 
-* The 'hand' images used in the game-area and the 'heart' images, including the favicon were taken from the website [pngwing.com](https://www.pngwing.com/) and then cropped using windows paint.
+* The 'hand' images used in the game-area, the 'skull' image displayed on the 404 Error page and the 'heart' images , including the favicon were taken from the website [pngwing.com](https://www.pngwing.com/) and then cropped using windows paint.
 
 ### Acknowledgments
 
