@@ -96,7 +96,7 @@ All featured photos were taken from various free stock photo websites. I have cr
 
 ### Wireframe
 
-A wireframe was created for mobile, tablet and desktop.
+Wireframes were created for mobile, tablet and desktop.
 
 ![Wireframes](assets/images/readme-images/rpsls-wireframe.png)
 
@@ -344,7 +344,7 @@ I have used the following websites to gather relevant information during my rese
 ### Content
 
 * I took the complete list of rules from the [Big Bang Theory Wiki](https://bigbangtheory.fandom.com/wiki/Rock,_Paper,_Scissors,_Lizard,_Spock) website.
-* I created my Readme file based on [Kera Cudmore's](https://github.com/kera-cudmore) [Bully Book Club](https://github.com/kera-cudmore/Bully-Book-Club) and [TheQuizArms](https://github.com/kera-cudmore/TheQuizArms) Readme file.
+* I created my Readme file based on [Kera Cudmore's](https://github.com/kera-cudmore) [Bully Book Club](https://github.com/kera-cudmore/Bully-Book-Club) and [TheQuizArms](https://github.com/kera-cudmore/TheQuizArms) Readme files.
 
 ### Media
 
