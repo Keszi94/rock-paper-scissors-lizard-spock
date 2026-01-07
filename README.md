@@ -19,7 +19,7 @@ Happy gaming!
 
 ![RPSLS Website on different devices](assets/images/readme-images/rpsls-amiresponsive.png)
 
-[View RPSLS on Github pages](https://github.com/Keszi94/rock-paper-scissors-lizard-spock)
+[View RPSLS on Github pages](https://eszter-kiskarpati.github.io/rock-paper-scissors-lizard-spock/)
 
 - - -
 
